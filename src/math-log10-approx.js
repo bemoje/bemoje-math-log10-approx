@@ -1,3 +1,5 @@
+import assertArgs from '@bemoje/assert-args'
+import assertType from '@bemoje/assert-type'
 import POW10 from '@bemoje/math-pow10-pre-computed'
 
 /**
@@ -6,6 +8,9 @@ import POW10 from '@bemoje/math-pow10-pre-computed'
  * @returns {number} The approximated logarithm of the integer.
  */
 export default function log10(x) {
+	assertArgs(x)
+	assertType(Number, x)
+
 	if (x < POW10[5]) {
 		if (x < POW10[2]) {
 			return x < POW10[1] ? 0 : 1

@@ -35,7 +35,7 @@ npm install --save-dev @bemoje/math-log10-approx
 ## Usage
 
 ```javascript
-import log10 from '@bemoje/math-log10-approx'
+import mathLog10Approx from '@bemoje/math-log10-approx'
 
 //=> undefined
 log10(0)
@@ -79,24 +79,16 @@ log10(10055100727920584576600)
 
 log10(100551007279206235576600)
 //=> 9
+
 ```
 
-## Tests
 
-Uses _Jest_ to test module functionality. Run tests to get coverage details.
+## Tests
+Uses *Jest* to test module functionality. Run tests to get coverage details.
 
 ```bash
 npm run test
 ```
 
 ## API
-
-### log10
-
-Approximate the logarithm base 10 of a small integer.
-
-#### Parameters
-
--  `x` **[number]** The integer to approximate the logarithm of.
-
-Returns **[number]** The approximated logarithm of the integer.
+#r
